@@ -7,7 +7,7 @@ class Pldiff < Formula
   depends_on "colordiff" => :recommended
 
   def install
-    system "/bin/sh", "install.sh", prefix
+    system "sh", "install.sh", prefix
   end
 
   test do
