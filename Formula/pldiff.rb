@@ -11,6 +11,10 @@ class Pldiff < Formula
   end
 
   test do
-    system "false"
+    system "defaults write #{testpath}/a foo -string bar"
+    system "defaults write #{testpath}/b foo -string baz"
+    o = shell_output("echo $(pldiff #{testpath}/a.plist #{testpath}/b.plist)")
+    assert_match "- <string>bar</string>", o
+    assert_match "+ <string>baz</string>", o
   end
 end
