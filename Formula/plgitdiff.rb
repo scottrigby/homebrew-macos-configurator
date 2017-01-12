@@ -4,6 +4,8 @@ class Plgitdiff < Formula
   url "https://github.com/scottrigby/plgitdiff/archive/1.0.0.tar.gz"
   sha256 "b77c365111a5f98beabf2540de37bdf8e686ae01f38091cbade252d2adf4f6c5"
 
+  depends_on "git"
+
   def install
     system "sh", "install.sh", prefix
   end
