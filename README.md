@@ -2,14 +2,14 @@
 This tap contains formulae for [MacOS Configurator](https://github.com/scottrigby/macos-configurator).
 
 # Install
-`brew tap homebrew/macos-configurator`, then `brew install <formula>`.
+`brew tap scottrigby/macos-configurator`, then `brew install <formula>`.
 
-If a formula conflicts with one from Homebrew/homebrew or another tap, you can `brew install homebrew/macos-configurator/<formula>`.
+If a formula conflicts with one from Homebrew/homebrew or another tap, you can `brew install scottrigby/macos-configurator/<formula>`.
 
 Or install via URL:
 
 ```
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-macos-configurator/master/<formula>.rb
+brew install https://raw.githubusercontent.com/scottrigby/homebrew-macos-configurator/master/Formula/pldiff.rb
 ```
 ## Acceptable Formulae
 This tap should contain only forumlae useful for [MacOS Configurator](https://github.com/scottrigby/macos-configurator). See Homebrew’s [Acceptable Formulae](https://github.com/Homebrew/brew/blob/master/docs/Acceptable-Formulae.md) documentation for more general critria.
